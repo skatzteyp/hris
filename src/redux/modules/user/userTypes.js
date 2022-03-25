@@ -1,0 +1,2 @@
+// exportActionTypes   (DONT DELETE THIS LINE: USED FOR BATTLECRY DUCK GENERATOR)
+export const USER_GET = 'user/USER-GET';

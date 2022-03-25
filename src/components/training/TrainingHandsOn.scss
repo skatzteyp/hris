@@ -1,0 +1,110 @@
+.training-details-marp {
+  .slide {
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+    section {
+      overflow-y: scroll;
+      display: block;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 22px;
+    }
+
+    p {
+      font-size: 1rem; 
+    }
+
+    ol, ul {
+      padding-left: 30px;
+      font-size: 1rem;
+      margin-bottom: 15px;
+
+      li {
+        padding-left: 10px;
+        margin-bottom: 15px;
+      }
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    blockquote {
+      background-color: #2D0F3C;
+      border: none;
+      padding: 1em;
+      border-radius: 5px;
+
+      p {
+        color: #fff;
+      }
+    }
+
+    pre {
+      margin: 30px 0;
+      margin-left: 40px;
+      position: relative;
+
+      &::before {
+        width: 30px;
+        height: 30px;
+        content: '<>';
+        letter-spacing: 0.09em;
+        position: absolute;
+        top: 0;
+        left: -50px;
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        color: #9532C7;
+        font-size: 12px;
+        background-color: #F4EBF9;
+        border-radius: 50%;
+        padding-left: 1px;
+      }
+    }
+
+    pre,
+    code {
+      background-color: #2D0F3C;
+      color: #fff;
+      font-size: 1rem;
+      line-height: 1.7;
+
+      span {
+        color: #fff;
+      }
+
+      &.hljs {
+        background-color: #2D0F3C;
+      }
+
+      .hljs-attr {
+        color: #A97EF7;
+      }
+
+      .hljs-string {
+        color: #61CCE1;
+      }
+
+      .hljs-title {
+        color: #E6DB74;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+stages:
+  - install
+  - build
+  - test
+  - deploy
+install:
+  stage: install
+  script:
+    - echo "Installing packages"
+    - yarn install
+    - echo "Packages installed"
+  artifacts:
+    name: "artifacts"
+    untracked: true
+    expire_in: 30 mins
+    paths:
+      - node_modules/
+build_dev:
+  stage: build
+  script:
+    - echo "Building development package"
+    - cp env.development .env
+    - yarn build
+    - echo "Build successful"
+  artifacts:
+    expire_in: 30 mins
+    paths:
+      - build
+  dependencies:
+    - install
+  except:
+    - master
+build_production:
+  stage: build
+  script:
+    - echo "Building production package"
+    - cp env.production .env
+    - yarn build
+    - echo "Build successful"
+  artifacts:
+    expire_in: 30 mins
+    paths:
+      - build
+  dependencies:
+    - install
+  only:
+    - master
+# test:
+#   stage: test
+#   script:
+#     - echo "Running tests"
+#     - yarn build:test
+#     - echo "Tests successful"
+#   dependencies:
+#     - install
+#     - build
+deploy_dev:
+  stage: deploy
+  script:
+    - echo "Deploying to dev server"
+    - sudo cp -rv build/* /var/www/hris-dev
+    - echo "Deployed"
+  environment:
+    name: development
+    url: "hris-dev.cody.asia"
+  only:
+    - develop
+deploy_production:
+  stage: deploy
+  script:
+    - echo "Deploying to server"
+    - sudo cp -rv build/* /var/www/hris-fe
+    - echo "Deployed"
+  environment:
+    name: production
+    url: "hris.cody.asia"
+  only:
+    - master

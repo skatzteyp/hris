@@ -1,0 +1,100 @@
+#slides {
+  h1 {
+    color: #3C3C3C;
+    border-left: 20px solid #9532C7;
+    padding: 0 0 0 20px;
+    line-height: 0.9;
+    font-size: 3.75rem;
+    margin: 0 0 50px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: #3C3C3C;
+    border-left: 12px solid #9532C7;
+    padding: 0 0 0 20px;
+    margin: 0 0 50px;
+    font-weight: bold;
+    line-height: 0.9;
+  }
+
+  h3 {
+    color: #A147CD;
+    font-weight: bold;
+    margin: 0 0 50px;
+    font-size: 1.875rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #3C3C3C;
+    margin: 0 0 50px;
+  }
+
+  ol {
+    list-style: decimal;
+    list-style-position: outside;
+    padding: 0 0 0 20px;
+  }
+
+  ol li {
+    font-size: 1.75rem;
+    color: #3C3C3C;
+    margin: 0 0 20px;
+    padding: 0 0 0 10px;
+  }
+
+  ul {
+    list-style: disc;
+    list-style-position: outside;
+    padding: 0 0 0 20px;
+  }
+
+  ul li {
+    font-size: 1.75rem;
+    color: #3C3C3C;
+    margin: 0 0 20px;
+    padding: 0 0 0 10px;
+  }
+
+  p {
+    font-size: 1.75rem;
+    color: #3C3C3C;
+    margin: 0 0 30px;
+    line-height: 1.5;
+  }
+
+  code {
+    display: inline-block;
+    color: #A147CD;
+    font-size: 1.4375rem;
+    font-weight: bold;
+    background-color: #F5EBF9;
+  }
+
+  pre {
+    background-color: #1E0A29;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  pre code {
+    background-color: transparent;
+    display: block;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  figure {
+    background-color: #F5EBF9;
+    text-align: center;
+  }
+
+  img {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}

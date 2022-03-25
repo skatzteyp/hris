@@ -1,0 +1,26 @@
+const STATUS = {
+  NEW: 28,
+  INITIAL: 29,
+  EXAM: 30,
+  PREFINAL: 31,
+  FINAL: 32,
+  BACKGROUND: 33,
+  ONBOARDING: 34,
+  STARTED: 35,
+  PASSED: 36,
+  FAILED: 37
+};
+
+const TRAINING_STATUS = {
+  DETAIL: 40,
+  SLIDESHOW: 41,
+  VIDEO: 42,
+  HANDSON: 43,
+  QUIZLIST: 44,
+}
+
+export const CONSTANTS =  {
+  STATUS,
+  TRAINING_STATUS
+};
+

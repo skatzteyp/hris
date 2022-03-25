@@ -1,0 +1,2 @@
+// exportActionTypes   (DONT DELETE THIS LINE: USED FOR BATTLECRY DUCK GENERATOR)
+export const UPLOAD = 'file/UPLOAD';

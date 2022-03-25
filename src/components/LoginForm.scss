@@ -1,0 +1,23 @@
+.login {
+  background: linear-gradient(0deg, rgba(0,192,215,1) 0%, rgba(0,108,255,1) 100%);
+}
+
+.login-form {
+  width: 460px;
+}
+
+.login-char-left {
+  left: -156px;
+  top: -100px;
+  z-index: -1;
+  width: 300px;
+  height: 168px;
+}
+
+.login-char-right {
+  right: -29px;
+  bottom: -71px;
+  z-index: -1;
+  width: 170px;
+  height: 163px;
+}

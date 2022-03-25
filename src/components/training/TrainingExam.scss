@@ -1,0 +1,38 @@
+.exam-icon {
+  top: 10px;
+  left: 8px;
+}
+
+.exam-radio {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  appearance: none;
+  border-radius: 50%;
+  border: 1px solid #D3D4D6;
+  flex-shrink: 0;
+
+  &:after {
+    position: absolute;
+    content: '';
+    background-color: #9532C7;
+    display: block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    opacity: 0;
+    top: 2px;
+    left: 2px;
+  }
+
+  &:active,
+  &:focus {
+    outline: none
+  }
+
+  &:checked {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
